@@ -2,11 +2,11 @@
 #include "Fille.hpp"
 #include <iostream>
 
-Fille::Fille() : Mere(){
-    std::cout << "Construction Fille\n";
-}
+Fille::Fille() : Mere() { }
 
-Fille::Fille(std::string nom) : Mere(nom) { }
+Fille::Fille(std::string nom) : Mere(nom) {
+    std::cout << "Construction Fille\n";
+ }
 
 Fille::~Fille() {
     //std::cout << "Destruction Fille\n";

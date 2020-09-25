@@ -2,12 +2,12 @@
 #include "Mere.hpp"
 #include <iostream>
 
-Mere::Mere() {
+Mere::Mere() : Mere("none") { }
+
+Mere::Mere(std::string nom) : nom(nom) { 
     n++;
     std::cout << "Contruction Mere n = " << getN() << "\n";
 }
-
-Mere::Mere(std::string nom) : nom(nom) { }
 
 Mere::~Mere() {
     n--;
