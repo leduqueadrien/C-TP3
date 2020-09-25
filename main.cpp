@@ -10,5 +10,8 @@ int main(int, char **) {
 	pm->afficher(); // affiche Mere
 	pf->afficher(); // affiche Fille
 	pp->afficher(); // affiche Fille
+	delete pm;
+	delete pf;
+	delete pp;
   return 0;
 }
