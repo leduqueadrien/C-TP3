@@ -1,6 +1,8 @@
 
 #include "Forme.hpp"
 #include "Point.hpp"
+#include <string>
+#include <sstream>
 
 int Forme::nbForme = 0;
 
@@ -34,3 +36,17 @@ void Forme::setW(int W) {
 void Forme::setH(int H) {
   h = H;
 }
+
+std::string Forme::toString() {
+    std::string chaine;
+    std::ostringstream oss1;
+    std::ostringstream oss2;
+    chaine = point.toString();
+    chaine += " hauteur= ";
+    oss1 << getW();
+    chaine += oss1.str();
+    chaine += ", largeur= ";
+    oss2 << getH();
+    chaine += oss2.str();
+
+    return chaine;

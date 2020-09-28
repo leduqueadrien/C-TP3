@@ -1,6 +1,7 @@
 
 #include <string>
 #include <iostream>
+#include <sstream>
 #include "Point.hpp"
 
 // Des "{", les champs sot TOUS CREER
@@ -40,7 +41,14 @@ void Point::deplacerVers(int nouveauX, int nouveauY) {
 
 std::string Point::toString() {
 	std::string chaine;
+	std::ostringstream ossx;
+	std::ostringstream ossy;
+	ossx << getX();
+	ossy << getY();
+	chaine = "x=";
+	chaine += ossx.str();
+	chaine += ", y=";
+	chaine += ossy.str();
 
-	chaine.append("x=%d, y=%d\n", getX(), getY());
 	return chaine;
 }

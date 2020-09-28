@@ -3,6 +3,7 @@
 #define FORME
 
 #include "Point.hpp"
+#include <string>
 
 class Forme
 {
@@ -20,6 +21,7 @@ public:
     void setW(int);
     void setH(int);
     static int getNbForme();
+    std::string toString();
     ~Forme();
 };
 
