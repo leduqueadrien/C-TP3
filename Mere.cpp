@@ -6,12 +6,10 @@ Mere::Mere() : Mere("none") { }
 
 Mere::Mere(std::string nom) : nom(nom) { 
     n++;
-    std::cout << "Contruction Mere n = " << getN() << "\n";
 }
 
 Mere::~Mere() {
     n--;
-    //std::cout << "Destruction Mere n = " << getN() << "\n";
 }
 
 int Mere::getN() {

@@ -4,14 +4,16 @@
 
 Fille::Fille() : Mere() { }
 
-Fille::Fille(std::string nom) : Mere(nom) {
-    std::cout << "Construction Fille\n";
+Fille::Fille(std::string nom) : nom(nom) {
+    nbFille ++;
  }
 
 Fille::~Fille() {
-    //std::cout << "Destruction Fille\n";
+    nbFille --;
 }
 
-void Fille::afficher() {
-    std::cout << "Fille\n";
+std::string Fille::getName(){
+    return nom;
 }
+
+int Fille::nbFille=0;

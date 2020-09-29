@@ -7,11 +7,14 @@
 class Fille : public Mere
 {
 private:
-    
+    std::string nom;
 public:
+    static int nbFille;
+    std::string getName(); 
+    int entierFille;
     Fille(std::string);
     Fille();
-    void afficher();
+
     ~Fille();
 };
 
